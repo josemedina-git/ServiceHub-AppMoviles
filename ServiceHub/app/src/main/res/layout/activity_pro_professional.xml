@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/backArrow"
+        <ImageButton
+            android:id="@+id/backArrow_pro"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_alignParentStart="true"
@@ -67,6 +67,7 @@
         android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/ibtn_reviews"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginEnd="16dp"
@@ -75,6 +76,7 @@
             app:tint="#4522A3" />
 
         <ImageButton
+            android:id="@+id/ibtn_tel"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginEnd="16dp"
@@ -83,6 +85,7 @@
             app:tint="#4522A3"/>
 
         <ImageButton
+            android:id="@+id/ibtn_share"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:contentDescription="@string/share"

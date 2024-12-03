@@ -25,7 +25,7 @@
             android:name=".MakeAgenda"
             android:exported="false" />
         <activity
-            android:name=".Agenda"
+            android:name=".Agendas"
             android:exported="false" />
         <activity
             android:name=".Payment"
