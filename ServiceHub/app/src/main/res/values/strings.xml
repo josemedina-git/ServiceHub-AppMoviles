@@ -5,4 +5,10 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_catalog">Catalog</string>
     <string name="title_me">Me</string>
+
+    <string name="back">Volver</string>
+    <string name="profile_image">Imagen de perfil</string>
+    <string name="call">Llamar</string>
+    <string name="share">Compartir</string>
+    <string name="message">Mensaje</string>
 </resources>
