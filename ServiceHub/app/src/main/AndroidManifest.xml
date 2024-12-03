@@ -13,7 +13,28 @@
         android:theme="@style/Theme.ServiceHub"
         tools:targetApi="31">
         <activity
+            android:name=".ProfileService"
+            android:exported="false" />
+        <activity
+            android:name=".MakeAgenda"
+            android:exported="false" />
+        <activity
+            android:name=".Agenda"
+            android:exported="false" />
+        <activity
+            android:name=".Payment"
+            android:exported="false" />
+        <activity
+            android:name=".Suscription"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
