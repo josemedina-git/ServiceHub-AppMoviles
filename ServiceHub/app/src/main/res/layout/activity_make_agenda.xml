@@ -62,7 +62,7 @@
                 android:id="@+id/fullName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Full name"
+                android:text="Full name profesional"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="@android:color/black" />
@@ -94,7 +94,7 @@
 
     <!-- Botón Schedule -->
     <Button
-        android:id="@+id/scheduleButton"
+        android:id="@+id/btn_scheduleButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Schedule"

@@ -72,6 +72,14 @@
                     android:textSize="14sp"
                     android:textColor="@android:color/darker_gray" />
 
+                <TextView
+                    android:id="@+id/userService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Servicio general"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/darker_gray" />
+
                 <!-- Rating y seguidores -->
                 <ImageButton
                     android:id="@+id/favoriteButton"
@@ -133,11 +141,12 @@
                 android:id="@+id/addFavoritesButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginStart="8dp"
-                android:text="Add to favorites"
+                android:layout_weight="1"
                 android:backgroundTint="@android:color/darker_gray"
-                android:textColor="@android:color/white" />
+                android:text="Add to favorites"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
         </LinearLayout>
 
         <!-- Información adicional -->

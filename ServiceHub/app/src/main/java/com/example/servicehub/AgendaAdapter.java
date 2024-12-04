@@ -12,11 +12,16 @@ import java.util.List;
 public class AgendaAdapter extends RecyclerView.Adapter<AgendaAdapter.AgendaViewHolder> {
 
     private List<Agenda> agendaList;
+    private OnDeleteClickListener onDeleteClickListener;
 
-    public AgendaAdapter(List<Agenda> agendaList) {
-        this.agendaList = agendaList;
+    public interface OnDeleteClickListener {
+        void onDeleteClick(int position);
     }
 
+    public AgendaAdapter(List<Agenda> agendaList, OnDeleteClickListener listener) {
+        this.agendaList = agendaList;
+        this.onDeleteClickListener = listener;
+    }
 
     @NonNull
     @Override
@@ -31,6 +36,13 @@ public class AgendaAdapter extends RecyclerView.Adapter<AgendaAdapter.AgendaView
         holder.serviceNameTextView.setText(agenda.getAgendaName());
         holder.noteTextView.setText(agenda.getNote());
         holder.dateTextView.setText(agenda.getDate());
+
+        // Configurar el evento de clic para eliminar
+        holder.itemView.findViewById(R.id.delete_agenda_button).setOnClickListener(v -> {
+            if (onDeleteClickListener != null) {
+                onDeleteClickListener.onDeleteClick(position);
+            }
+        });
     }
 
     @Override
@@ -51,5 +63,3 @@ public class AgendaAdapter extends RecyclerView.Adapter<AgendaAdapter.AgendaView
         }
     }
 }
-
-

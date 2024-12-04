@@ -1,5 +1,6 @@
 package com.example.servicehub.ui.dashboard;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,6 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.servicehub.ProfileService;
 import com.example.servicehub.R;
 
 import java.util.List;
@@ -32,8 +34,20 @@ public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.ServiceV
         Service service = serviceList.get(position);
         holder.serviceNameTextView.setText(service.getServiceName());
         holder.workerNameTextView.setText(service.getWorkerName());
-        holder.ratingTextView.setText(String.valueOf(service.getRating()));
+        holder.ratingTextView.setText(service.getRating()); // Rating como String
+
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(holder.itemView.getContext(), ProfileService.class);
+            intent.putExtra("serviceName", service.getServiceName());
+            intent.putExtra("workerName", service.getWorkerName());
+            intent.putExtra("title", service.getTitle());
+            intent.putExtra("description", service.getDescription());
+            intent.putExtra("followers", service.getFollowers());
+            intent.putExtra("rating", service.getRating());
+            holder.itemView.getContext().startActivity(intent);
+        });
     }
+
 
     @Override
     public int getItemCount() {

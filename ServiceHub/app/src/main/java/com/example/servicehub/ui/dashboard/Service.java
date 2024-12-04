@@ -1,13 +1,14 @@
 package com.example.servicehub.ui.dashboard;
 
 public class Service {
-    private String serviceName;
-    private String workerName;
-    private double rating;
+    private String serviceName, workerName, title, description, followers, rating;
 
-    public Service(String serviceName, String workerName, double rating) {
+    public Service(String serviceName, String workerName, String title, String description, String followers, String rating) {
         this.serviceName = serviceName;
         this.workerName = workerName;
+        this.title = title;
+        this.description = description;
+        this.followers = followers;
         this.rating = rating;
     }
 
@@ -19,7 +20,18 @@ public class Service {
         return workerName;
     }
 
-    public double getRating() {
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getFollowers() {
+        return followers;
+    }
+    public String getRating() {
         return rating;
     }
 }
