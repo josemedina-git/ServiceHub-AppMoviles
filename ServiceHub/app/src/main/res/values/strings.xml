@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">ServiceHub</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_dashboard">Catalog</string>
+    <string name="title_notifications">Profile</string>
     <string name="title_catalog">Catalog</string>
     <string name="title_me">Me</string>
 

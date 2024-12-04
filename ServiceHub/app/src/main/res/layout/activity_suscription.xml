@@ -25,7 +25,7 @@
             android:layout_marginLeft="8dp"
             android:src="@drawable/ic_back_arrow"
             android:contentDescription="Back arrow"
-            android:tint="@color/black"
+            android:background="@color/white"
             tools:ignore="UseAppTint" />
     </LinearLayout>
 

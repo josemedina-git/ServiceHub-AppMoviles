@@ -88,36 +88,41 @@
         android:id="@+id/ibtn_google_log"
         android:layout_width="54dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="192dp"
+        android:layout_marginEnd="176dp"
         android:layout_marginBottom="304dp"
         android:backgroundTint="#00FFFFFF"
         android:contentDescription="Log in with Google"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_log"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/icon_google" />
 
     <TextView
         android:id="@+id/tv_options_log"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="96dp"
         android:text="Or login in with"
         app:layout_constraintBottom_toTopOf="@+id/tv_create_log"
         app:layout_constraintEnd_toStartOf="@+id/ibtn_google_log"
         app:layout_constraintHorizontal_bias="0.787"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_log" />
 
     <ImageButton
         android:id="@+id/ibtn_apple_log"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="68dp"
         android:backgroundTint="#00FFFFFF"
         android:contentDescription="Log in with apple"
         app:layout_constraintBottom_toTopOf="@+id/btn_create_log"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toEndOf="@+id/ibtn_facebook_log"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_log"
         app:srcCompat="@drawable/icon_apple" />
 
     <ImageButton
@@ -130,6 +135,7 @@
         android:contentDescription="Log in with facebook"
         app:layout_constraintBottom_toTopOf="@+id/btn_create_log"
         app:layout_constraintStart_toEndOf="@+id/ibtn_google_log"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_log"
         app:srcCompat="@drawable/icon_facebook" />
 
     <TextView
@@ -137,7 +143,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="196dp"
         android:text="Don´t have an accout yet?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_create_log"
@@ -160,8 +166,8 @@
         android:id="@+id/btn_create_log"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="192dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="180dp"
         android:backgroundTint="#4522A3"
         android:text="Create account"
         app:layout_constraintBottom_toBottomOf="parent"

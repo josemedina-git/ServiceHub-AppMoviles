@@ -23,7 +23,7 @@ public class ProProfessional extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ProProfessional.this, MainActivity.class);
+                Intent intent = new Intent(ProProfessional.this, ProfileService.class);
                 startActivity(intent);
             }
         });

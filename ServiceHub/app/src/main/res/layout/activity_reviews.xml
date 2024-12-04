@@ -12,7 +12,6 @@
         android:id="@+id/topBar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="#6200EE"
         android:elevation="4dp">
 
         <!-- Back Arrow -->
@@ -22,21 +21,12 @@
             android:layout_height="24dp"
             android:src="@drawable/ic_back_arrow"
             android:contentDescription="Back"
-            app:tint="#FFFFFF"
+            android:background="@color/white"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
             android:layout_marginStart="16dp" />
 
         <!-- Title -->
-        <TextView
-            android:id="@+id/titleText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Comments"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:layout_centerInParent="true"
-            android:textStyle="bold"/>
     </RelativeLayout>
 
     <!-- RecyclerView -->
