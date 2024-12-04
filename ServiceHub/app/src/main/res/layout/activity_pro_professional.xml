@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Back Arrow -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backArrow_pro"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/back"
+            android:background="@color/white"
+            android:src="@drawable/ic_back_arrow" />
+    </RelativeLayout>
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/circle_background"
+        android:contentDescription="@string/profile_image"
+        android:src="@drawable/_15911"
+        android:scaleType="centerCrop" />
+
+
+    <!-- Full Name -->
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Vannevar Bush"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Professional Title -->
+    <TextView
+        android:id="@+id/professionalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="Jardinería profesional"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:id="@+id/actionButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibtn_reviews"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/message"
+            android:src="@drawable/ic_message"
+            app:tint="#4522A3" />
+
+        <ImageButton
+            android:id="@+id/ibtn_tel"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/call"
+            android:src="@drawable/ic_call"
+            app:tint="#4522A3"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_share"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/share"
+            android:src="@drawable/ic_share"
+            app:tint="#4522A3"/>
+    </LinearLayout>
+
+    <!-- Contact Details -->
+    <LinearLayout
+        android:id="@+id/contactDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/officePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_office"
+            android:drawablePadding="8dp"
+            android:text="(123) 456-7890"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:tint="#9052D8"/>
+
+        <TextView
+            android:id="@+id/homePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_home"
+            android:drawablePadding="8dp"
+            android:text="(123) 456-7890"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:tint="#9052D8"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="8dp"
+            android:text="AvaSav@example.com"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:tint="#9052D8"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="8dp"
+            android:text="99 Washington Ave.\nManchester, Kentucky 99"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:tint="#9052D8"/>
+    </LinearLayout>
+
+    <!-- Social Accounts -->
+    <LinearLayout
+        android:id="@+id/socialAccounts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/facebookAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:drawableStart="@drawable/ic_facebook"
+            android:drawablePadding="8dp"
+            android:text="Ava Savannah"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:tint="#3F51B5" />
+
+        <TextView
+            android:id="@+id/instagramAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_instagram"
+            android:drawablePadding="8dp"
+            android:text="Ava.Savannah"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:tint="#9052D8"/>
+    </LinearLayout>
+
+</LinearLayout>
