@@ -20,7 +20,7 @@
         android:id="@+id/noteField"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:hint="Add note"
+        android:hint="@string/add_note"
         android:background="@drawable/edit_text_background"
         android:padding="12dp"
         android:gravity="top|start"
@@ -62,7 +62,7 @@
                 android:id="@+id/fullName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Full name profesional"
+                android:text="@string/full_name_profesional"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="@android:color/black" />
@@ -71,7 +71,7 @@
                 android:id="@+id/btn_viewProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="View profile"
+                android:text="@string/view_profile"
                 android:textSize="9sp"
                 android:textColor="@color/white" />
         </LinearLayout>
@@ -97,7 +97,7 @@
         android:id="@+id/btn_scheduleButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Schedule"
+        android:text="@string/schedule"
         android:backgroundTint="@color/purple_500"
         android:textColor="@android:color/white"
         android:textStyle="bold"

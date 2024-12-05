@@ -76,7 +76,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name"
+                android:text="@string/namefn"
                 android:textColor="@color/dark_gray"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp"/>
@@ -93,7 +93,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Phone"
+                android:text="@string/phone"
                 android:textColor="@color/dark_gray"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp"/>
@@ -110,7 +110,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Email"
+                android:text="@string/emailfn"
                 android:textColor="@color/dark_gray"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp"/>
@@ -119,7 +119,7 @@
                 android:id="@+id/emailField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="example@email.com"
+                android:hint="@string/example_email_com"
                 android:background="@drawable/rounded_input"
                 android:padding="12dp"
                 android:layout_marginBottom="16dp"/>
@@ -127,7 +127,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Password"
+                android:text="@string/passwordfn"
                 android:textColor="@color/dark_gray"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp"/>
@@ -164,7 +164,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Address"
+                android:text="@string/address"
                 android:textColor="@color/dark_gray"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp"/>
@@ -173,7 +173,7 @@
                 android:id="@+id/addressField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Street #123, City, State"
+                android:hint="@string/street_123_city_state"
                 android:background="@drawable/rounded_input"
                 android:padding="12dp"
                 android:layout_marginBottom="16dp"/>
@@ -182,7 +182,7 @@
                 android:id="@+id/btn_save"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Save changes"
+                android:text="@string/save_changes"
                 android:backgroundTint="@color/purple_700"
                 android:textColor="@android:color/white"
                 android:padding="12dp"/>

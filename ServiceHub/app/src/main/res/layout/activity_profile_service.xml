@@ -68,7 +68,7 @@
                     android:id="@+id/userTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="HR Advisor, Founder y CEO"
+                    android:text="@string/hr_advisor_founder_y_ceo"
                     android:textSize="14sp"
                     android:textColor="@android:color/darker_gray" />
 
@@ -76,7 +76,7 @@
                     android:id="@+id/userService"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Servicio general"
+                    android:text="@string/servicio_general"
                     android:textSize="14sp"
                     android:textColor="@android:color/darker_gray" />
 
@@ -92,7 +92,7 @@
                     android:id="@+id/followers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1,834 followers"
+                    android:text="@string/_1_834_followers"
                     android:textColor="@android:color/darker_gray"
                     android:textSize="14sp" />
 
@@ -133,7 +133,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Schedule"
+                android:text="@string/scheduleapf"
                 android:backgroundTint="@color/purple_500"
                 android:textColor="@android:color/white" />
 
@@ -144,7 +144,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
                 android:backgroundTint="@android:color/darker_gray"
-                android:text="Add to favorites"
+                android:text="@string/add_to_favorites"
                 android:textColor="@android:color/white"
                 android:textSize="10sp" />
         </LinearLayout>
@@ -155,7 +155,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="About"
+            android:text="@string/about"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@android:color/black" />
@@ -164,7 +164,7 @@
             android:id="@+id/aboutDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Quis amet magna sint pariatur elit irure quis officia labore esse."
+            android:text="@string/quis_amet_magna_sint_pariatur_elit_irure_quis_officia_labore_esse"
             android:textSize="14sp"
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="8dp" />
@@ -175,7 +175,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Top skills"
+            android:text="@string/top_skills"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@android:color/black" />
@@ -191,7 +191,7 @@
                 android:id="@+id/skill1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Managing"
+                android:text="@string/managing"
                 android:padding="8dp"
                 android:textColor="@color/purple_500"
                 android:layout_marginEnd="8dp" />
@@ -200,7 +200,7 @@
                 android:id="@+id/skill2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Search"
+                android:text="@string/searchaps"
                 android:padding="8dp"
                 android:textColor="@color/purple_500"
                 android:layout_marginEnd="8dp" />
@@ -209,7 +209,7 @@
                 android:id="@+id/skill3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Human Resource"
+                android:text="@string/human_resource"
                 android:padding="8dp"
                 android:textColor="@color/purple_500" />
         </LinearLayout>
@@ -220,7 +220,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Reviews"
+            android:text="@string/reviews"
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@android:color/black" />
@@ -246,7 +246,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Jennifer King: Nulla laboris fugiat minim."
+                android:text="@string/jennifer_king_nulla_laboris_fugiat_minim"
                 android:textSize="14sp"
                 android:textColor="@android:color/darker_gray" />
         </LinearLayout>
