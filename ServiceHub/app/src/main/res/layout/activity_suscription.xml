@@ -42,7 +42,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start your premium navigation"
+        android:text="@string/start_your_premium_navigation"
         android:textColor="@color/purple"
         android:textSize="24sp"
         android:gravity="center"
@@ -53,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Consectetur minim tempor ad occaecat ullamco elit ea consequat"
+        android:text="@string/consectetur_minim_tempor_ad_occaecat_ullamco_elit_ea_consequat"
         android:textColor="@color/gray"
         android:textSize="18sp"
         android:gravity="center"
@@ -79,7 +79,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="No ads"
+                android:text="@string/no_ads"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 />
@@ -88,7 +88,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Personalized recommendations"
+                android:text="@string/personalized_recommendations"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:layout_marginTop="15dp" />
@@ -96,7 +96,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="We promote your service"
+                android:text="@string/we_promote_your_service"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:layout_marginTop="15dp" />
@@ -109,7 +109,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Subscription valid for one month"
+                android:text="@string/subscription_valid_for_one_month"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:layout_marginTop="15dp" />
@@ -145,7 +145,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="How was your experience?"
+        android:text="@string/how_was_your_experience"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:gravity="center"

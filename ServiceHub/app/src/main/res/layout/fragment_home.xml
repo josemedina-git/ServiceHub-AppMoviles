@@ -4,12 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".MainActivity">
 
+    <!-- ScrollView para el contenido dinámico -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        tools:layout_editor_absoluteX="48dp">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,7 +31,6 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/banner" />
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -38,14 +41,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Professionals"
+                    android:text="@string/professionals"
                     android:textColor="@android:color/black"
                     android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="+20k Professionals"
+                    android:text="@string/_20k_professionals"
                     android:textColor="@color/purple_700" />
             </LinearLayout>
 
@@ -61,7 +64,8 @@
                     android:layout_margin="8dp"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/professional1" />
+                    android:src="@drawable/professional1"
+                    android:clipToOutline="true" />
 
                 <ImageView
                     android:layout_width="48dp"
@@ -69,7 +73,8 @@
                     android:layout_margin="8dp"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/professional2" />
+                    android:src="@drawable/professional2"
+                    android:clipToOutline="true" />
 
                 <ImageView
                     android:layout_width="48dp"
@@ -77,23 +82,26 @@
                     android:layout_margin="8dp"
                     android:background="@drawable/circle_background"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/professional3" />
+                    android:src="@drawable/professional3"
+                    android:clipToOutline="true" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Featured Services of the Month"
+                android:text="@string/featured_services_of_the_month"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
             <GridLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:columnCount="3">
-
+                android:layout_gravity="center"
+                android:columnCount="3"
+                android:rowCount="1"
+                android:alignmentMode="alignMargins"
+                android:useDefaultMargins="true">
 
                 <ImageView
                     android:layout_width="100dp"
@@ -102,6 +110,8 @@
                     android:layout_column="0"
                     android:layout_margin="4dp"
                     android:contentDescription="Service 1"
+                    android:background="@drawable/rounded_background"
+                    android:scaleType="fitXY"
                     android:src="@drawable/service1" />
 
                 <ImageView
@@ -109,6 +119,8 @@
                     android:layout_height="100dp"
                     android:layout_margin="4dp"
                     android:contentDescription="Service 2"
+                    android:background="@drawable/rounded_background"
+                    android:scaleType="fitXY"
                     android:src="@drawable/service2" />
 
                 <ImageView
@@ -118,6 +130,8 @@
                     android:layout_column="2"
                     android:layout_margin="4dp"
                     android:contentDescription="Service 3"
+                    android:background="@drawable/rounded_background"
+                    android:scaleType="fitXY"
                     android:src="@drawable/service3" />
             </GridLayout>
 
@@ -127,28 +141,33 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:backgroundTint="@color/purple_700"
-                android:text="View all"
+                android:text="@string/view_all"
                 android:textColor="@android:color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Favorite services"
+                android:text="@string/favorite_services"
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
             <GridLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:columnCount="3">
+                android:layout_gravity="center"
+                android:columnCount="3"
+                android:rowCount="1"
+                android:alignmentMode="alignMargins"
+                android:useDefaultMargins="true">
 
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="4dp"
                     android:contentDescription="Favorite 1"
+                    android:background="@drawable/rounded_background"
+                    android:scaleType="fitXY"
                     android:src="@drawable/favorite1" />
 
                 <ImageView
@@ -156,6 +175,8 @@
                     android:layout_height="100dp"
                     android:layout_margin="4dp"
                     android:contentDescription="Favorite 2"
+                    android:background="@drawable/rounded_background"
+                    android:scaleType="fitXY"
                     android:src="@drawable/favorite2" />
 
                 <ImageView
@@ -163,6 +184,8 @@
                     android:layout_height="100dp"
                     android:layout_margin="4dp"
                     android:contentDescription="Favorite 3"
+                    android:background="@drawable/rounded_background"
+                    android:scaleType="fitXY"
                     android:src="@drawable/favorite3" />
             </GridLayout>
         </LinearLayout>

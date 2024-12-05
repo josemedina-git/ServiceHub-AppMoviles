@@ -14,14 +14,17 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <EditText
             android:id="@+id/searchEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Search"
+            android:hint="@string/search"
             android:padding="8dp"
             android:background="@drawable/search_bar_bg"
             android:inputType="text"
@@ -37,6 +40,7 @@
             android:contentDescription="Filter" />
     </LinearLayout>
 
+
     <!-- Tabla encabezado -->
     <LinearLayout
         android:id="@+id/tabHeader"
@@ -51,7 +55,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="NAME"
+            android:text="@string/namefd"
             android:textSize="16sp"
             android:textColor="#FFFFFF"
             android:gravity="center" />
@@ -59,7 +63,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Stars"
+            android:text="@string/stars"
             android:textSize="16sp"
             android:textColor="#FFFFFF" />
     </LinearLayout>

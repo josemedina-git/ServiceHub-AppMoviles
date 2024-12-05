@@ -5,18 +5,36 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_home">
 
+    <!-- Home Fragment -->
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.servicehub.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
 
+        <!-- Acción para ir al Dashboard -->
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <!-- Dashboard Fragment -->
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.example.servicehub.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard">
 
+        <!-- Acción para regresar al Home -->
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <!-- Notifications Fragment -->
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.servicehub.ui.notifications.NotificationsFragment"

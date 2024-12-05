@@ -11,12 +11,14 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.activity.OnBackPressedCallback;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.example.servicehub.R;
 import com.example.servicehub.databinding.FragmentDashboardBinding;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +32,7 @@ public class DashboardFragment extends Fragment {
 
     private FirebaseFirestore db;
 
+    @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         DashboardViewModel dashboardViewModel =
@@ -47,38 +50,41 @@ public class DashboardFragment extends Fragment {
         // Lista para almacenar los servicios obtenidos de Firestore
         List<Service> serviceList = new ArrayList<>();
 
-        // Realiza la consulta a la colección de servicios
+        // Realiza la consulta a Firestore
         db.collection("servicios")
                 .get()
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
-                        // Limpiar la lista antes de agregar los nuevos datos
                         serviceList.clear();
-
-                        // Iterar sobre los documentos y obtener los datos
                         for (QueryDocumentSnapshot document : task.getResult()) {
                             String nombreProfesional = document.getString("nombreProfesional");
                             String titulo = document.getString("titulo");
                             String servicio = document.getString("servicio");
                             String descripcion = document.getString("descripcion");
-                            String followers = document.getString("followers");  // Convierte si es necesario
-                            String ratingPromedio = document.getString("ratingPromedio");  // Convierte si es necesario
+                            String followers = document.getString("followers");
+                            String ratingPromedio = document.getString("ratingPromedio");
 
-                            // Crear el objeto Service y agregarlo a la lista
-                            Service service = new Service(servicio, nombreProfesional, titulo, descripcion, followers, ratingPromedio); // Puedes hacer conversiones si es necesario
+                            Service service = new Service(servicio, nombreProfesional, titulo, descripcion, followers, ratingPromedio);
                             serviceList.add(service);
                         }
-
-                        // Actualiza el adaptador con los nuevos datos
                         serviceAdapter.notifyDataSetChanged();
                     } else {
                         Toast.makeText(getActivity(), "Error al obtener los servicios", Toast.LENGTH_SHORT).show();
                     }
                 });
 
-        // Configura el adaptador con la lista obtenida
         serviceAdapter = new ServiceAdapter(serviceList);
         recyclerView.setAdapter(serviceAdapter);
+
+        // Manejo del botón "Atrás" del sistema
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_activity_main);
+                navController.popBackStack(R.id.navigation_home, false);
+            }
+        });
+
 
         return root;
     }

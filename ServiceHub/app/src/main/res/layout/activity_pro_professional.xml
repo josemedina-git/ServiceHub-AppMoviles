@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
-        android:text="Jardinería profesional"
+        android:text="@string/jardiner_a_profesional"
         android:textColor="#666666"
         android:textSize="14sp" />
 
@@ -74,6 +74,7 @@
             android:layout_marginEnd="16dp"
             android:contentDescription="@string/message"
             android:src="@drawable/ic_message"
+            android:background="@color/white"
             app:tint="#4522A3" />
 
         <ImageButton
@@ -83,6 +84,7 @@
             android:layout_marginEnd="16dp"
             android:contentDescription="@string/call"
             android:src="@drawable/ic_call"
+            android:background="@color/white"
             app:tint="#4522A3"/>
 
         <ImageButton
@@ -91,6 +93,7 @@
             android:layout_height="48dp"
             android:contentDescription="@string/share"
             android:src="@drawable/ic_share"
+            android:background="@color/white"
             app:tint="#4522A3"/>
     </LinearLayout>
 
@@ -132,7 +135,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:drawableStart="@drawable/ic_email"
+            android:drawableStart="@drawable/ic_email2"
             android:drawablePadding="8dp"
             android:text="AvaSav@example.com"
             android:textColor="#000000"
